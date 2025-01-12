@@ -1,0 +1,93 @@
+
+ 
+  section {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Centra horizontalmente el formulario y la imagen */
+    align-items: center; /* Centra verticalmente el contenido */
+    gap: 5rem; /* Espaciado entre el formulario y la imagen */
+   
+    width: 100%;
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+  
+  .contacto {
+    flex: 1;
+    max-width: 500px; /* Limita el tamaño del formulario */
+    text-align: left; /* Asegura que los textos estén alineados */
+  }
+  
+  .contacto h2 {
+    font-size: 50px;
+    margin-bottom: 1rem;
+    color: #91a398; /* Toque futurista */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+  }
+  
+  .contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Espaciado entre campos */
+  }
+  
+  .datos label {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.8;
+    display: block;
+  }
+  
+  .datos input {
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #e0e0e0;
+    color: #000000;
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .datos input:focus {
+    border-bottom-color: #0056b3; /* Resalta en verde futurista */
+  }
+  
+  button.btn {
+    background-color: #91a398;
+    color: #ffffff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button.btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Efecto sutil */
+  }
+  
+  .img-contacto {
+    flex: 1;
+    max-width: 600px; /* Limita el tamaño de la imagen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    padding: 2rem;
+   margin-left: 100px;
+    text-align: center;
+    margin-left: 50px;
+  }
+  
+ 

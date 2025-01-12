@@ -1,0 +1,37 @@
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    
+}
+.navegacion ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.navegacion ul li{
+   margin: 30px;
+}
+
+.btn{
+    font-size: 25px;
+    
+    transition: background-color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+}
+.btn:hover {
+   border-bottom: 1px solid #91a398;
+   cursor: pointer;
+   
+  }
+
+.logo{
+    font-size: 30px;
+  }
+
