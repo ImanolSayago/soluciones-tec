@@ -21,7 +21,7 @@
     color: #333;
   }
   
-  .info-presentacion p {
+  .texto-escrito{
     font-size: 25px;
     margin-top: 1rem;
     color: #666;
@@ -57,7 +57,8 @@
   }
   
   #servicios h3{
-    font-size: 45px;
+    font-size: 60px;
+    color: #333;
   }
   .cont-info {
     display: flex;
@@ -88,7 +89,7 @@
   
   .informacion h2 {
     font-size: 30px;
-    color: #333; /* Título más oscuro para resaltar */
+    color: #91a398; /* Título más oscuro para resaltar */
     margin-bottom: 1rem;
   }
   
@@ -125,8 +126,8 @@
   }
 
   .sobre-mi h3{
-    font-size: 55px;
-    margin-top: 80px;
+    font-size: 70px;
+    color: #333;
   }
 
   .informacion-sobremi{

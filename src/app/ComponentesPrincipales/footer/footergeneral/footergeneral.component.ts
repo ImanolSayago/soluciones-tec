@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-footergeneral',
@@ -8,5 +9,8 @@ import { Component } from '@angular/core';
   styleUrl: './footergeneral.component.css'
 })
 export class FootergeneralComponent {
-
+rutas = inject(Router)
+ircontacto(){
+  this.rutas.navigate(["contacto"]);
+}
 }

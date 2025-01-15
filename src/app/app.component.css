@@ -1,0 +1,10 @@
+.layout-container {
+    display: flex;
+    flex-direction: column; /* Organiza todo en una columna */
+    min-height: 100vh; /* El contenedor principal ocupa el 100% de la altura */
+  }
+
+app-footer {
+    margin: 0; /* Asegura que no haya márgenes extra en el footer */
+    padding: 0; /* Asegura que no haya padding extra */
+  }

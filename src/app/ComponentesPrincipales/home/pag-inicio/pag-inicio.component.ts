@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
   styleUrl: './pag-inicio.component.css',
 
 })
-export class PagInicioComponent {
+export class PagInicioComponent implements OnInit {
 
   rutas = inject(Router)
   navegar_info(){
@@ -32,5 +32,25 @@ export class PagInicioComponent {
   navegar_info_ecommerce(){
     this.rutas.navigate(["e-commerce"]);
   }
-  
+
+
+  textoCompleto: string = 'Te ayudo a resolver tus problemas tecnológicos, rápido y sin complicaciones. ¡Descubrí lo que podemos hacer por vos!';
+  textoMostrado: string = '';
+  velocidadEscritura: number = 35; // Milisegundos por carácter
+
+  ngOnInit() {
+    this.escribirTexto();
+  }
+
+  escribirTexto() {
+    let i = 0;
+    const interval = setInterval(() => {
+      if (i < this.textoCompleto.length) {
+        this.textoMostrado += this.textoCompleto.charAt(i);
+        i++;
+      } else {
+        clearInterval(interval); // Detenemos la animación al terminar
+      }
+    }, this.velocidadEscritura);
+  }
 }

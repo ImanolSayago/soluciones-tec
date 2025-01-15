@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterModule, RouterOutlet } from '@angular/router';
+import { NavigationEnd, Router, RouterModule, RouterOutlet } from '@angular/router';
 import { NavbarComponent } from "./ComponentesPrincipales/navbar/navbar.component";
 import { FormContactoComponent } from "./ComponentesPrincipales/forms/form-contacto/form-contacto.component";
 import { PagInicioComponent } from "./ComponentesPrincipales/home/pag-inicio/pag-inicio.component";
@@ -14,4 +14,12 @@ import { FootergeneralComponent } from "./ComponentesPrincipales/footer/footerge
 })
 export class AppComponent {
   title = 'soluciones-tec';
+
+  constructor(private router: Router) {
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        window.scrollTo(0, 0); // Esto lleva la página al inicio
+      }
+    });
+  }
 }

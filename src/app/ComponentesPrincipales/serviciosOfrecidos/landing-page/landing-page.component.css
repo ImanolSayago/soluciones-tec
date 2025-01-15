@@ -26,11 +26,13 @@
 
 #landing-page .texto-descripcion{
     width: 500px;
+    height: auto;
     margin-top: -100px;
 }
-#landing-page .texto-descripcion h2{
+#landing-page .texto-descripcion .titulo{
     margin-bottom: 20px;
-    
+    color: #91a398;
+    font-size: 55px;
 }
 
 #landing-page .texto-descripcion p{
@@ -56,7 +58,7 @@
 #landing-page .ofrecemos {
     width: 100%;
     margin: 20px;
-    margin-top: 50px;
+    margin-top: 30px;
     height: 400px;
     padding: 35px;
     background-color: white;
@@ -82,6 +84,7 @@ box-shadow: 1px 1px 1px 1px rgb(207, 207, 207);
 
 #landing-page .txt-ofrecemos h2{
     font-size:40px;
+    color: #91a398;
 }
 
 #landing-page .img-ofrecemos{

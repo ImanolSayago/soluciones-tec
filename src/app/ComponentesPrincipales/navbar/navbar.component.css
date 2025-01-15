@@ -6,7 +6,16 @@ nav{
     height: 50px;
     background-color: rgb(255, 255, 255);
     
-}
+        position: fixed; /* Para que quede siempre visible */
+        top: 0;
+        left: 0;
+        width: 100%; /* Que abarque todo el ancho */
+        z-index: 1000; /* Que quede por encima de otros elementos */
+        margin: 0; /* Elimina márgenes */
+        padding: 0; /* Elimina paddings */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* (Opcional) Agregale sombra */
+    
+} 
 .navegacion ul{
     display: flex;
     flex-direction: row;
@@ -33,5 +42,7 @@ nav{
 
 .logo{
     font-size: 30px;
+    text-decoration: none;
+    color: black;
   }
 
